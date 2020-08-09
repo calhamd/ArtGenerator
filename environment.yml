@@ -3,6 +3,7 @@ channels:
   - javascript
 dependencies:
   - pylint
+  - jupyter
   - tensorflow
   - matplotlib
   - numpy
@@ -10,3 +11,4 @@ dependencies:
   - pip
   - pip:
     - tensorflow-probability==0.10.1
+    - tensorflow-datasets
