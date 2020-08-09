@@ -1,0 +1,11 @@
+name: artGen
+channels:
+  - javascript
+dependencies:
+  - pylint
+  - tensorflow
+  - numpy
+  - pandas
+  - pip
+  - pip:
+    - tensorflow-probability==0.10.1

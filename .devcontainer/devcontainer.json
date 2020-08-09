@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.128.0/containers/python-3-miniconda
 {
-	"name": "Python 3 - Miniconda",
+	"name": "ArtGenContainer",
 	"context": "..",
 	"dockerFile": "Dockerfile",
 
@@ -17,14 +17,18 @@
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"ms-python.python"
-	]
+	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "python --version",
+	"postCreateCommand": "./init_conda",
 
 	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
 	// "remoteUser": "vscode"
+
+	"mounts": [
+		"source=C:\\Users\\calhamd\\Documents\\sourceArtFiles,target=/data,type=bind,consistency=cached"
+	]
 }

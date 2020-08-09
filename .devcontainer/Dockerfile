@@ -26,10 +26,10 @@ RUN apt-get update \
     && apt-get -y install git openssh-client less iproute2 procps iproute2 lsb-release \
     #
     # Install pylint
-    && /opt/conda/bin/pip install pylint \
+    # && /opt/conda/bin/pip install pylint \
     #
     # Update Python environment based on environment.yml (if present)
-    && if [ -f "/tmp/conda-tmp/environment.yml" ]; then /opt/conda/bin/conda env update -n base -f /tmp/conda-tmp/environment.yml; fi \
+    # && if [ -f "/tmp/conda-tmp/environment.yml" ]; then /opt/conda/bin/conda env update -n base -f /tmp/conda-tmp/environment.yml; fi \
     && rm -rf /tmp/conda-tmp \
     #
     # Create a non-root user to use if preferred - see https://aka.ms/vscode-remote/containers/non-root-user.
