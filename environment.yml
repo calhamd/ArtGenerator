@@ -4,6 +4,7 @@ channels:
 dependencies:
   - pylint
   - tensorflow
+  - matplotlib
   - numpy
   - pandas
   - pip

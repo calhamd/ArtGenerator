@@ -29,6 +29,6 @@
 	// "remoteUser": "vscode"
 
 	"mounts": [
-		"source=C:\\Users\\calhamd\\Documents\\sourceArtFiles,target=/data,type=bind,consistency=cached"
+		"source=/home/calham/sourceArtFiles,target=/artData,type=bind,consistency=cached"
 	]
 }
